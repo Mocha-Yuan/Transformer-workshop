@@ -1,0 +1,65 @@
+.mini-experiment {
+  display: grid;
+  gap: 12px;
+  border: 3px solid var(--cyan) !important;
+  background: #17213d !important;
+}
+
+.mini-experiment strong {
+  color: var(--cyan);
+}
+
+.mini-experiment p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.mini-source-sentence {
+  border: 3px solid var(--border-dark);
+  background: #11172b;
+  color: var(--green) !important;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.mini-token-row,
+.mini-position-pair,
+.mini-attention-choice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mini-token-row span,
+.mini-token-row button,
+.mini-position-pair button,
+.mini-attention-choice button {
+  border: 3px solid var(--border-dark);
+  background: #253058;
+  color: var(--text);
+  cursor: pointer;
+  padding: 9px 11px;
+  font: inherit;
+  box-shadow:
+    inset -3px -3px 0 rgba(0, 0, 0, 0.24),
+    3px 3px 0 #070914;
+}
+
+.mini-token-row button {
+  background: var(--cyan);
+  color: #071018;
+  font-weight: 700;
+  animation: block-enter 160ms steps(3, end);
+}
+
+.mini-position-pair button:hover,
+.mini-position-pair button:focus-visible,
+.mini-attention-choice button:hover,
+.mini-attention-choice button:focus-visible,
+.mini-attention-choice button.is-selected {
+  background: #1f5138;
+  color: var(--green);
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}

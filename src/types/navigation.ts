@@ -1,0 +1,17 @@
+export type PageId =
+  | 'home'
+  | 'game'
+  | 'practice'
+  | 'practiceGame'
+  | 'visualLab'
+  | 'atlas'
+  | 'quiz'
+  | 'onboarding'
+  | 'interpreter'
+  | 'sentenceLab'
+  | 'achievements'
+  | 'mistakeReview'
+  | 'finalChallenge'
+  | 'profile'
+  | 'myProgress'
+  | 'about';
